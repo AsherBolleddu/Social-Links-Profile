@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Inter", system-ui;
+}
+
+@theme {
+  --color-custom-green: #c4f82a;
+}
