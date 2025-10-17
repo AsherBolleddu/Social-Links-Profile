@@ -3,15 +3,22 @@ import Button from "./Button";
 
 export default function Card() {
   return (
-    <div className="w-sm p-10 flex flex-col gap-6 bg-grey-800 place-items-center">
-      <img src={avatar} alt="" className="w-[88px] h-[88px] rounded-full" />
+    <section
+      aria-labelledby="name"
+      className="max-w-sm w-full p-6 sm:p-10 flex flex-col gap-6 bg-grey-800 place-items-center rounded-xl"
+    >
+      <img
+        src={avatar}
+        alt="Jessica Randall Profile Picture"
+        className="w-[88px] h-[88px] rounded-full"
+      />
       <div>
         <h1 className="text-white font-semibold text-2xl text-center">
           Jessica Randall
         </h1>
-        <address className="text-custom-green not-italic text-sm font-bold mt-1 text-center">
+        <p className="text-custom-green not-italic text-sm font-bold mt-1 text-center">
           London, United Kingdom
-        </address>
+        </p>
       </div>
 
       <p className="text-white text-sm font-normal">
@@ -27,6 +34,6 @@ export default function Card() {
         <Button link={"https://x.com/"} name={"Twitter"} />
         <Button link={"https://www.instagram.com/"} name={"Instagram"} />
       </div>
-    </div>
+    </section>
   );
 }
